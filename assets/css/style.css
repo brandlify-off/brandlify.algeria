@@ -187,3 +187,18 @@ section p{
     max-width: 80%;
     margin: 0 auto;
 }
+.v-gradient{
+    background: linear-gradient(90deg, #391780    , #8054FF    );
+    border: none;
+    border-radius: 5px;
+}
+
+.bg-dark{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #222228;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+}
