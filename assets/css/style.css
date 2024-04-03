@@ -21,17 +21,19 @@ body{
     background-color: var(--main-bg);
 }
 
-.primary-btn{
+.primary-btn, button a{
     width: 120px;
     height: 45px;
     font-size: 16px;
     font-weight: 600;
     color: var(--main-text-color);
     background: linear-gradient(120deg, #EB689D, #3A61A8);
+    text-decoration: none;
 }
-.primary-btn:hover{
+.primary-btn:hover,button a:hover {
     background-color: var(--first-color);
     color: var(--main-text-color);
+    text-decoration: none;
 }
 .secondary-btn{
     width: auto;
@@ -526,8 +528,14 @@ footer p{
 
 
 /* pricing page */
+.pricing-plans{
+    margin-top: 100px;
+}
 .v-gradient{
-    background: linear-gradient(90deg, #391780    , #8054FF    );
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    background: linear-gradient(120deg, #EB689D, #3A61A8);
     border: none;
     border-radius: 5px;
 }
