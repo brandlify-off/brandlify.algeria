@@ -248,7 +248,7 @@ header{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 656.15px;
-    background-image: url("/separate-shape.svg");
+    background-image: url("/assets/img/separate-shape.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -300,7 +300,7 @@ header{
 .brand-center{
     width: 70px;
     height: 70px;
-    background-image: url("/Br-white.png");
+    background-image: url("/assets/img/Br-white.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -381,7 +381,7 @@ header{
     height: 66px;
     position: absolute;
     border-radius: 50%;
-    background-image: url('/mailchamp.png');
+    background-image: url('/assets/img/mailchamp.png');
     top: 72px;
     left: 244px;
 }
@@ -391,7 +391,7 @@ header{
     height: 66px;
     position: absolute;
     border-radius: 50%;
-    background-image: url('/webflow.png');
+    background-image: url('/assets/img/webflow.png');
     top: 236px;
     left: 60px;
 }
@@ -401,7 +401,7 @@ header{
     height: 66px;
     position: absolute;
     border-radius: 50%;
-    background-image: url('/other-app.png');
+    background-image: url('/assets/img/other-app.png');
     top: 15px;
     left: 4px;
 }
@@ -614,7 +614,7 @@ footer p{
 }
 @media screen and (max-width: 576px){
     .separate-shape{
-        background-image: url('/separate-shape-sm.svg');
+        background-image: url('/assets/img/separate-shape-sm.svg');
         top: -150px;
     }
     .social-links{
