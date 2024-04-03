@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +7,34 @@
   <title>Brandlify</title>
 
   <!-- styling -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 <body>
-  <header style="max-height: 1230px;">
-    <nav class="container navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/Brandlify-color.png" alt="brandlify.algeria" height="40px" width="auto">
-        </a>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container container-fluid"> 
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/Brandlify-color.png" class="d-none d-md-block" alt="brandlify.algeria" height="40px" width="auto">
+                <img src="./assets/img/br-color.png" class="d-block d-md-none" alt="brandlify.algeria" height="40px" width="auto">
+              </a>
+              
+              <ul class="navbar-nav d-lg-flex d-none flex-row ms-auto mb-0">
+                <li class="nav-item">
+                  <a class="nav-link active px-2" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#pricing-section">Our plans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#clients-section">Our clinets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link px-2" href="#contact-section">Contact Us</a>
+                </li>
 
-        <ul class="navbar-nav d-md-flex d-none flex-row ms-auto mb-0">
-          <li class="nav-item">
-            <a class="nav-link active px-2" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active px-2" aria-current="page" href="#pricing">pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-2" href="#">Other pages</a>
-          </li>
-
-          <!-- uncomment the next lignes to get a dropdown button -->
-          <!-- <li class="nav-item dropdown">
+                <!-- uncomment the next lignes to get a dropdown button -->
+                <!-- <li class="nav-item dropdown">
                   <a class="nav-link px-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                   </a>
@@ -44,381 +45,315 @@
                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li> -->
-        </ul>
-
-        <button class="navbar-toggler mx-2 d-block d-md-none" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <button class="btn primary-btn" type="button"
-          style="text-transform: capitalize;margin-inline-start:0.5rem;">start now</button>
-      </div>
-    </nav>
-    <div class="main-header">
-      <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
-        <div class="ball"></div>
-        <div class="ball"></div>
-      </div>
-      <div class="main-header-content">
-        <h1>Beautiful Landing Page Design for You</h1>
-        <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem
-        </p>
-        <button class="btn primary-btn" type="button"
-          style="text-transform: capitalize;position:relative;left: 50%;transform: translate(-50%);">start now</button>
-      </div>
-    </div>
-    <div class="card main-card col-11 col-sm-9 col-md-6">
-
-    </div>
-    <div class="separate-shape"></div>
-  </header>
-  <section class="container featured-boxes">
-    <h2>Feature Boxes</h2>
-    <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
-    <div class="featured-services col-12 row mx-auto mb-4">
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper">
-              <img src="./assets/img/icons/cube.svg" alt="cube-tool">
+              </ul>
+              <div class="d-flex align-items-center">
+                <button class="navbar-toggler mx-2 d-block d-lg-none collapsed" id="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#side-menu" aria-expanded="false" aria-controls="side-menu">
+                  <svg class="open-menu" id="openMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="28" width="28" fill="#fff">
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                  </svg>
+                  <svg class="close-menu" id="closeMenu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"  height="28" width="28" fill="#fff">
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                  </svg>
+                </button>
+                <button class="btn primary-btn" type="button" style="text-transform: capitalize;margin-inline-start:0.5rem;">start now</button>
+              </div>
             </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
-          </div>
+        </nav>
+        <div class="side-main-menu collapse d-block d-lg-none" id="side-menu">
+            <ul class="list-unstyled list-group px-0">
+              <li class="list-group-item">
+                <a class="nav-link active px-2" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link px-2" href="#pricing-section">Our plans</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link px-2" href="#clients-section">Our clinets</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link px-2" href="#contact-section">Contact Us</a>
+              </li>
+            </ul>
         </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper">
-              <img src="./assets/img/icons/layers.svg" alt="cube-tool">
+        <div class="main-header">
+            <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
             </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
+          <div class="main-header-content col-11 col-md-9">
+            <h1>Beautiful Landing Page Design for You</h1>
+            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+            <button class="btn primary-btn" type="button" style="text-transform: capitalize;position:relative;left: 50%;transform: translate(-50%);">start now</button>
           </div>
         </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper special">
-              <img src="./assets/img/icons/pen-tool.svg" alt="cube-tool">
-            </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
-          </div>
+        <div class="card main-card col-11 col-md-6">
+          
         </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper">
-              <img src="./assets/img/icons/typing-tool.svg" alt="cube-tool">
-            </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper">
-              <img src="./assets/img/icons/design-tool.svg" alt="cube-tool">
-            </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="custom-card">
-          <div class="card-image">
-            <div class="image-wrapper">
-              <img src="./assets/img/icons/responsive-tool.svg" alt="cube-tool">
-            </div>
-          </div>
-          <div class="card-title">
-            <h3>Responsive Layouts</h3>
-          </div>
-          <div class="card-content">
-            <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the
-              problem</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="pricing" class="pricing-section">
-    <div class="container ">
-
-      <div class="col-12 row mx-auto mb-4  justify-content-center align-items-center ">
-        <div class="col-4 mb-5 text-center">
-          <h2 class="">pricing</h2>
-        </div>
-      </div>
-
-      <div class="col-12 row align-items-stretch mx-auto mb-4">
-        <div class="col">
-
-          <div class="card custom-card h-100 py-0">
+        <div class="separate-shape"></div>
+    </header>
 
 
+    <section class="container featured-boxes" id="features-boxes">
+      <h2 class="text-center text-sm-start">Feature Boxes</h2>
+      <p class="text-center text-sm-start">A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+      <div class="featured-services col-12 d-flex flex-wrap justify-content-center mx-auto mb-4">
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
             <div class="card-image">
-              <div class="image-wrapper rounded-circle position-absolute top-0 start-50 translate-middle">
-                <img src="./assets/img/icons/silver.svg" alt="silver">
+              <div class="image-wrapper">
+                <img src="./assets/img/icons/cube.svg" alt="cube-tool">
               </div>
             </div>
-            <div class="card-body d-flex flex-column justify-content-between px-3">
-              <div>
-
-              <div class="card-title w-100 mt-2">
-                <h3>
-                  Silver Package
-                </h3>
-                <hr class="my-4 opacity-100">
-              </div>
-              <div class="card-text  ">
-                <ul class="list-group-flush w-100 p-0">
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                    </span>
-                    Unique logo
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                      <!-- </div> -->
-                    </span>
-                    Corrections : 1
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2  ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    Advices and help
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li class="list-group-item d-flex justify-content-start align-items-center gap-2 mb-2 disabled">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check-off.svg" alt="check"></span>
-                    </span>
-                    Premium features
-                  </li>
-                </ul>
-              </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
             </div>
-              <div class="card-footer w-100  border-0">
-                <hr class="my-4 opacity-100">
-                <div class="d-flex justify-content-between align-items-center px-1">
-                  <p class="mb-0"><strong class="text-bold">5000Da</strong></p>
-                  <a href="#" class="btn btn-primary v-gradient">Buy now</a>
-                </div>
-              </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
             </div>
           </div>
         </div>
-        <div class="col">
-
-          <div class="card custom-card h-100 py-0">
-
-
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
             <div class="card-image">
-              <div class="image-wrapper rounded-circle position-absolute top-0 start-50 translate-middle">
-                <img src="./assets/img/icons/golden.svg" alt="golden">
+              <div class="image-wrapper">
+                <img src="./assets/img/icons/layers.svg" alt="cube-tool">
               </div>
             </div>
-            <div class="card-body d-flex flex-column justify-content-between px-3">
-              <div>
-
-              <div class="card-title w-100 mt-2">
-                <h3>
-                  Golden Package
-                </h3>
-                <hr class="my-4 opacity-100">
-              </div>
-              <div class="card-text  ">
-                <ul class="list-group-flush w-100 p-0">
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                    </span>
-                    Unique logo
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                      <!-- </div> -->
-                    </span>
-                    Corrections : 1
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2  ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    Advices and help
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li class="list-group-item d-flex justify-content-start align-items-center gap-2 mb-2 disabled">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check-off.svg" alt="check"></span>
-                    </span>
-                    Premium features
-                  </li>
-                </ul>
-              </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
             </div>
-              <div class="card-footer w-100  border-0">
-                <hr class="my-4 opacity-100">
-                <div class="d-flex justify-content-between align-items-center px-1">
-                  <p class="mb-0"><strong class="text-bold">20000Da</strong></p>
-                  <a href="#" class="btn btn-primary v-gradient">Buy now</a>
-                </div>
-              </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
             </div>
           </div>
         </div>
-        <div class="col">
-
-          <div class="card custom-card h-100 py-0">
-
-
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
             <div class="card-image">
-              <div class="image-wrapper rounded-circle position-absolute top-0 start-50 translate-middle">
-                <img src="./assets/img/icons/premium.svg" alt="premium">
+              <div class="image-wrapper special">
+                <img src="./assets/img/icons/pen-tool.svg" alt="cube-tool">
               </div>
             </div>
-            <div class="card-body d-flex flex-column justify-content-between px-3">
-              <div>
-
-              <div class="card-title w-100 mt-2">
-                <h3>
-                  Premium Package
-                </h3>
-                <hr class="my-4 opacity-100">
-              </div>
-              <div class="card-text  ">
-                <ul class="list-group-flush w-100 p-0">
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                    </span>
-                    Unique logo
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check">
-                      <!-- </div> -->
-                    </span>
-                    Corrections : 1
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2  ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    Advices and help
-                  </li>
-                  <li
-                    class="list-group-item d-flex justify-content-start align-items-center text-secondary gap-2 mb-2 ">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check.svg" alt="check"></span>
-                    List item
-                  </li>
-                  <li class="list-group-item d-flex justify-content-start align-items-center gap-2 mb-2 disabled">
-                    <span class="badge bg-dark ">
-                      <img src="./assets/img/icons/check-off.svg" alt="check"></span>
-                    </span>
-                    Premium features
-                  </li>
-                </ul>
-              </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
             </div>
-              <div class="card-footer w-100  border-0">
-                <hr class="my-4 opacity-100">
-                <div class="d-flex justify-content-between align-items-center px-1">
-                  <p class="mb-0"><strong class="text-bold">50000Da</strong></p>
-                  <a href="#" class="btn btn-primary v-gradient">Buy now</a>
-                </div>
-              </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
             </div>
           </div>
         </div>
-
-
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
+            <div class="card-image">
+              <div class="image-wrapper">
+                <img src="./assets/img/icons/typing-tool.svg" alt="cube-tool">
+              </div>
+            </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
+            </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
+            <div class="card-image">
+              <div class="image-wrapper">
+                <img src="./assets/img/icons/design-tool.svg" alt="cube-tool">
+              </div>
+            </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
+            </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-11 col-sm-6 col-md-4">
+          <div class="custom-card">
+            <div class="card-image">
+              <div class="image-wrapper">
+                <img src="./assets/img/icons/responsive-tool.svg" alt="cube-tool">
+              </div>
+            </div>
+            <div class="card-title">
+              <h3>Responsive Layouts</h3>
+            </div>
+            <div class="card-content">
+              <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="clients-section"></section>
-  <section class="contact-section"></section>
-  <footer></footer>
+    </section>
 
 
-  <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <section class="container pricing-section d-flex flex-column-reverse flex-md-row justify-content-center align-items-center" id="pricing-section">
+      <div class="orbit-section col-11 col-md-6 d-flex justify-content-center align-items-center">
+        <div class="brand-center">
+          <div class="orbit-bg"></div>
+          <div class="orbit-cirlce"></div>
+          <div class="orbit-cirlce" style="padding: 185px;"></div>
+          <div class="orbit-cirlce electron-element"></div>
+          <div class="electron-element" id="firstChild"></div>
+          <div class="electron-element" id="secondChild"></div>
+          <div class="electron-element" id="thirdChild"></div>
+          <div class="electron-element app" id="mailchamp"></div>
+          <div class="electron-element app" id="webflow"></div>
+          <div class="electron-element app" id="otherApp"></div>
+        </div>
+      </div>
+      <div class="pricing-content col-11 col-md-6 text-center text-md-start">
+        <h2 class="mr-0">Brandlify is here to guide and help you at all times</h2>
+        <p class="mr-0">Welcome to Brandlify – Your Brand Amplification Partner! We specialize  in branding, design, logo creation, marketing, web design, and  development. Let us amplify your brand's presence and success online.  Ready to elevate your brand? Explore Brandlify today!</p>
+        <button class="btn primary-btn" type="button" style="text-transform: capitalize;position:relative; z-index:4;"><a href="/pages/pricing.html">learn more</a></button>
+      </div>
+    </section>
+
+
+    <section class="clients-section"id="clients-section">
+      <div class="container">
+        <h2 class="text-center mx-auto col-11 col-sm-9 col-lg-6">We are looking forward to work with you!</h2>
+        <div class="row justify-content-center my-5 mx-auto" style="overflow-x: auto;gap: 10px 25px;">
+          <div class="client-wrapper col-5 col-sm-4 col-md-3 col-lg-2">
+            <img src="/assets/img/clients/client-1.svg" alt="client-1">
+          </div>
+          <div class="client-wrapper col-5 col-sm-4 col-md-3 col-lg-2">
+            <img src="/assets/img/clients/client-2.svg" alt="client-2">
+          </div>
+          <div class="client-wrapper col-5 col-sm-4 col-md-3 col-lg-2">
+            <img src="/assets/img/clients/client-3.svg" alt="client-3">
+          </div>
+        </div>
+        <div class="card main-card ">
+          <div class="d-flex flex-row align-items-center">
+            <div class="col-9 col-md-6 ps-0 ps-md-4 mx-auto mx-md-0 text-center text-md-start" style="z-index: 3;">
+              <p style="margin-bottom: 12px;color:#ffffff;">LOVE OUR WORK ?</p>
+              <h2 style="text-transform: none;">Feel free to ask for a free consulting</h2>
+              <button class="btn secondary-btn mt-4" type="button">Ask for a consulting</button>
+            </div>
+            <div class="col-6 d-none d-md-block">
+              <img src="/assets/img/world-map.svg" alt="world-map" width="100%" height="auto">
+            </div>
+          </div>
+          <div class="col-12 d-block d-md-none" style="position: absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0.23;">
+            <img src="/assets/img/world-map.svg" alt="world-map" width="100%" height="auto" >
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="contact-section"id="contact-section" style="margin-top: 300px;">
+      <div class="container">
+        <div class="d-flex flex-column-reverse flex-md-row align-items-center justify-content-between">
+            <div class="contact-globe d-flex justify-content-center col-12 col-sm-11 col-md-6">
+              <img src="/assets/img/globe.svg" alt="globe-svg" width="80%" height="auto">
+              <div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);">
+                <div class="ball"></div>
+                <div class="ball"></div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-11 col-md-6 text-center text-md-start">
+                <h2>Get In Touch</h2>
+                <p>A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+                <form>
+                    <input class="custom-input col-11 col-md-9" type="text" placeholder="Your Name"/>
+                    <input class="custom-input col-11 col-md-9" type="email" placeholder="Your Email"/>
+                    <textarea class="custom-input col-11 col-md-9" name="client-message"  cols="30" rows="7" placeholder="Your Message"></textarea>
+                    <div>
+                      <button class="btn primary-btn" type="submit" style="text-transform: capitalize;width:150px;z-index:4;position:relative;">Get in Touch</button>
+                    </div>
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer style="margin-top: 5rem;">
+      <div class="top-footer py-5">
+        <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-start">
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/Brandlify-color.png" alt="brandlify.algeria" height="45px" width="auto">
+              </a>
+              <div class="social-links d-flex justify-ceontent-between align-items-center">
+                <!-- <a class="social-icon" href="#" target="_blank" id="facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                    <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+                  </svg>
+                </a> -->
+                <a class="social-icon" href="https://www.instagram.com/brandlify.algeria/" target="_blank" id="instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                  </svg>
+                </a>
+                <a class="social-icon" href="https://www.tiktok.com/@brandlify.algeria" target="_blank" id="tiktok">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+              <p class="mt-3 mx-auto mx-sm-0 text-center text-sm-start">A good design is not only aesthetically pleasing, but also functional. It should be able to solve the problem</p>
+          </div>
+          <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end mt-5 mt-sm-0">
+            <div class="footer-column col-6 col-sm-4 text-center">
+              <div class="card-title">
+                <h3 class="text-center">usfull link</h3>
+              </div>
+              <ul class="list-unstyled footer-links">
+                <li class="footer-link">
+                  <a href="#header">Home</a>
+                </li>
+                <li class="footer-link">
+                  <a href="#features-boxes">Our services</a>
+                </li>
+                <li class="footer-link">
+                  <a href="#pricing-section">Our plans</a>
+                </li>
+                <li class="footer-link">
+                  <a href="#clients-section">Our clinets</a>
+                </li>
+                <li class="footer-link">
+                  <a href="#contact-section">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="footer-column col-4">
+              <div class="card-title">
+                <h3>Responsive Layouts</h3>
+              </div>
+              <ul class="list-unstyled footer-links">
+                <li class="footer-link">
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                  <a href=""></a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer py-4">
+        <div class="container">
+            <p class="mb-0 mx-auto text-center">all rights resereved <a href="#header">brandlify.algeria</a> &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="/assets/Js/script.js"></script>
 
 </body>
-
 </html>
