@@ -159,12 +159,20 @@ header{
     outline: 0 !important;
     appearance: none;
     box-shadow: none;
+    transition: 0.6s all linear;
 }
 .navbar-toggler:focus{
     border: 0 transparent !important;
     outline: 0 !important;
     appearance: none;
     box-shadow: none;
+    transition: 0.6s all linear;
+}
+.navbar-toggler.collapsed #closeMenu{
+    display: none;
+}
+.navbar-toggler:not(.collapsed) #openMenu{
+    display: none;
 }
 
 .main-header{ 
